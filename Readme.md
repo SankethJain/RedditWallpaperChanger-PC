@@ -11,6 +11,7 @@
     <code>
         AppData\Local\RedditWallpaperChanger\RedditWallpaperChanger\1.0.0.0
     </code>
+    <br />
     The Wallpaper folder is a temporary storage for the currently applied wallpaper.<br />
     The Data folder stores the Sqlite which stores the user's settings (Changed in the UI).<br /><br />
     The application additionally uses the regedit folder to control the wallpaper's settings.
