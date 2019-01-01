@@ -14,6 +14,7 @@ namespace RedditWallpaperChanger.Notification
 {
     public class Notification
     {
+        private readonly string basePath = "H:/Sanketh/Projects/C#/RedditWallpaperChanger";
         private NotifyIcon notifyIcon;
         private ContextMenuStrip menuStrip;
         private Timer timer;
@@ -141,7 +142,7 @@ namespace RedditWallpaperChanger.Notification
             menuStrip.Items.Add(exitMenuItem);
 
             //Setting up the notification icon
-            notifyIcon.Icon = new System.Drawing.Icon("H:/Sanketh/Projects/C#/RedditWallpaperChanger/RedditWallpaperChanger.Notification/Images/RedditWallpaperChanger_PC.ico");
+            notifyIcon.Icon = new System.Drawing.Icon(basePath + "/RedditWallpaperChanger.Notification/Images/RedditWallpaperChanger_PC.ico");
             
             notifyIcon.ContextMenuStrip = menuStrip;
             notifyIcon.Visible = true;
@@ -151,7 +152,7 @@ namespace RedditWallpaperChanger.Notification
 
         private void SettingsMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("H:/Sanketh/Projects/C#/RedditWallpaperChanger/RedditWallpaperChanger.UI/bin/debug/RedditWallpaperChanger.UI.exe");
+            Process.Start(basePath + "/RedditWallpaperChanger.UI/bin/debug/RedditWallpaperChanger.UI.exe");
         }
 
         private void ExitMenuItem_Click(object sender, EventArgs e)
